@@ -1,0 +1,10 @@
+[Unit]
+Description=Logs some system statistics to the systemd journal
+Requires=weather.service
+
+[Timer]
+Unit=weather.service
+OnCalendar=*-*-* 00:15:30
+
+[Install]
+WantedBy=timers.target

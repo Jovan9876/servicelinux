@@ -1,0 +1,10 @@
+Description=Writes the forecast into a file called weather
+
+[Service]
+User=vagrant
+WorkingDirectory=/home/vagrant/Scripts/
+ExecStart=/home/vagrant/Scripts/simpleScript.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
